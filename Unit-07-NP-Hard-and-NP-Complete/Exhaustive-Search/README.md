@@ -7,7 +7,7 @@ Demonstrate a small optimization or decision problem by enumerating every
 candidate and selecting or checking valid solutions.
 
 ## Complexity
-State the size of the candidate space and the work per candidate. Exponential
+State the size of the candidate space and the work per candidate. Exponential  
 growth is expected for many suitable demonstrations.
 
 ## Validation and Results
