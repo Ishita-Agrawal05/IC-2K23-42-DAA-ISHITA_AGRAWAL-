@@ -7,8 +7,7 @@ Find a minimum spanning tree of a connected, undirected, weighted graph. Sort
 edges by weight and add an edge only when it joins two components.
 
 ## Complexity
-Sorting edges takes `O(E log E)`; disjoint-set operations are nearly constant
-amortized time, giving overall `O(E log E)` time.
+Sorting edges takes `O(E log E)`; disjoint-set operations are nearly constant a mortized time, giving overall `O(E log E)` time.
 
 ## Validation and Results
 Test equal weights, cycles, disconnected inputs, and known small MSTs. Compare
