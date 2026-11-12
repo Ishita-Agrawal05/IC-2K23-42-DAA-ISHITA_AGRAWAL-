@@ -3,6 +3,8 @@
 ## Status
 
 Performance measurement is demonstrated by the existing [searching](../Searching/README.md)
+
+
 and [sorting](../Sorting/README.md) experiments. The sorting comparison script
 records timings to CSV and generates a graph.
 
