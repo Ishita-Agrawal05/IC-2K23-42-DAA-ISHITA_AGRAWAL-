@@ -1,0 +1,31 @@
+def job_sequencing(jobs, deadline_limit):
+    jobs = sorted(jobs, key=lambda x: x[2], reverse=True)
+    slots = [None] * (deadline_limit + 1)
+    total_profit = 0
+    sequence = []
+
+    for job, deadline, profit in jobs:
+        for i in range(min(deadline, deadline_limit), 0, -1):
+            if slots[i] is None:
+                slots[i] = job
+                total_profit += profit
+                sequence.append(job)
+                break
+
+    return sequence, total_profit
+
+
+def main():
+    jobs = [
+        ("J1", 2, 100),
+        ("J2", 1, 50),
+        ("J3", 2, 200),
+        ("J4", 3, 150),
+    ]
+    sequence, profit = job_sequencing(jobs, 3)
+    print(f"Sequence: {sequence}")
+    print(f"Total profit: {profit}")
+
+
+if __name__ == "__main__":
+    main()
