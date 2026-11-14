@@ -1,3 +1,16 @@
+# Pseudocode:
+# Knapsack01(weights, values, capacity)
+#     n = length(weights)
+#     create dp[0..n][0..capacity] with zeros
+#     for i from 1 to n:
+#         for w from 1 to capacity:
+#             if weights[i] <= w:
+#                 dp[i][w] = max(dp[i-1][w], values[i] + dp[i-1][w - weights[i]])
+#             else:
+#                 dp[i][w] = dp[i-1][w]
+#     return dp[n][capacity]
+
+
 def knapsack_01(weights, values, capacity):
     n = len(weights)
     dp = [[0 for _ in range(capacity + 1)] for _ in range(n + 1)]
