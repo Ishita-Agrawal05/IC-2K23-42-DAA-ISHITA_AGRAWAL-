@@ -1,3 +1,21 @@
+# Pseudocode:
+# JobSequencing(jobs, deadline_limit)
+#     sort jobs by profit in descending order
+#     create slots[1..deadline_limit] as empty
+#     total_profit = 0
+#     sequence = []
+#
+#     for each job in sorted jobs:
+#         for time from min(deadline, deadline_limit) down to 1:
+#             if slots[time] is empty:
+#                 place job at time
+#                 total_profit = total_profit + profit
+#                 append job to sequence
+#                 break
+#
+#     return sequence, total_profit
+
+
 def job_sequencing(jobs, deadline_limit):
     jobs = sorted(jobs, key=lambda x: x[2], reverse=True)
     slots = [None] * (deadline_limit + 1)
