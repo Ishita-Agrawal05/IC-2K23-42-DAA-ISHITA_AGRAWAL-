@@ -16,9 +16,7 @@ the GitHub repository. The current Git remote is preserved as-is.
 | [Unit 6](Unit-06-Backtracking/) | Backtracking | [General Backtracking](Unit-06-Backtracking/General-Backtracking/), [N-Queens](Unit-06-Backtracking/N-Queens/), [Sum of Subsets](Unit-06-Backtracking/Sum-of-Subsets/) |
 | [Unit 7](Unit-07-NP-Hard-and-NP-Complete/) | NP-Hard, NP-Complete, and Advanced Optimization | [Exhaustive Search](Unit-07-NP-Hard-and-NP-Complete/Exhaustive-Search/), [0/1 Knapsack with Branch and Bound](Unit-07-NP-Hard-and-NP-Complete/0-1-Knapsack-Branch-and-Bound/), [TSP with Branch and Bound](Unit-07-NP-Hard-and-NP-Complete/TSP-Branch-and-Bound/) |
 
-Unit 1 contains the existing implementations and experimental artifacts. The
-other experiment directories currently contain documentation scaffolds; add
-the implementation and measured results as each lab is completed.
+The repository now includes working implementations across Units 1 through 7. Unit 1 contains the original performance-analysis exercises, while Units 2–7 include the implemented algorithmic experiments and their supporting code.
 
 ## Documentation and Practices
 
